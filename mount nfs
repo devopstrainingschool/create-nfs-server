@@ -1,0 +1,28 @@
+Here are the steps to connect an NFS (Network File System) server to another server:
+
+Install NFS client package on the server that will mount the NFS share. For example, on a Debian-based system, you can install the NFS client package with the following command:
+csharp
+Copy code
+sudo apt-get install nfs-common
+Create a directory to mount the NFS share.
+bash
+Copy code
+sudo mkdir /mnt/nfs
+Mount the NFS share to the newly created directory using the following command:
+ruby
+Copy code
+sudo mount <NFS_server_IP_address>:<NFS_share_path> /mnt/nfs
+For example, if the NFS server IP address is 192.168.1.100 and the NFS share path is /exported/share, the mount command would be:
+
+ruby
+Copy code
+sudo mount 192.168.1.100:/exported/share /mnt/nfs
+Verify that the NFS share is mounted successfully by listing the contents of the mount directory:
+bash
+Copy code
+ls /mnt/nfs
+If you want the NFS share to be mounted automatically after a reboot, add an entry to the /etc/fstab file:
+bash
+Copy code
+echo "<NFS_server_IP_address>:<NFS_share_path> /mnt/nfs nfs defaults 0 0" | sudo tee -a /etc/fstab
+Note: Make sure the NFS server has the necessary permissions to allow the mounting server to access the NFS share.
