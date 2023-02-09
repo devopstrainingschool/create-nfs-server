@@ -83,7 +83,8 @@ spec:
       mountPath: <Mount point inside the pod>
  
  
- 
+ ## These are othermethodsof insataaling it to pods
+ https://itnext.io/kubernetes-storage-part-1-nfs-complete-tutorial-75e6ac2a1f77
  
  
  
