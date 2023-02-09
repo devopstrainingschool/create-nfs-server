@@ -50,6 +50,11 @@ sudo mount -t nfs nfs_ip:/srv/nfs/kubedata /mnt
 ```
 sudo mount -t nfs nfs_ip:nfs_path host_client_path
 ```
+# FIX ME
+## To mount automatically 
+### Please at how to automatically mount them
+
+
 # If you want to unmount it do:
 ```
 sudo umount host_client_path
