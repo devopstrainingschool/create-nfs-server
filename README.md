@@ -35,4 +35,4 @@ This should display the shared directory /nfs-share.
 
 links:
 https://www.exxactcorp.com/blog/Troubleshooting/deploying-dynamic-nfs-provisioning-in-kubernetes
-
+https://shishirkh.medium.com/how-to-set-up-an-nfs-for-vms-kubernetes-6e6651d3d85b
