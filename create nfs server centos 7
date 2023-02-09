@@ -58,6 +58,10 @@ sudo umount host_client_path
  
  # To add the NSF to kubernetes pods
  ## 1- Configuration to add worker nodes to /etc/exports
+ ### examples 
+ /mnt/nfs_share  worker_node_01_ip_addr(rw,sync,no_subtree_check)
+/mnt/nfs_share  worker_node_02_ip_addr(rw,sync,no_subtree_check)
+/mnt/nfs_share  worker_node_03_ip_addr(rw,sync,no_subtree_check)
  ## 2- Mount using this example
  apiVersion: v1
 kind: Pod
