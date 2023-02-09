@@ -24,5 +24,43 @@ sudo systemctl status nfs-server
 ```
  sudo chown nfsnobody: /srv/nfs/kubedata/
 ```
- ## 
+ ## Let's edit the exports file to add to be exported to remote hosts
+ ```
+ sudo vi /etc/exports
+ ```
+ ```
+ /srv/nfs/kubedata    *(rw,sync,no_subtree_check,no_root_squash,no_all_squash,insecure)
+ ```
+ #### Instead of * , you can put servers ip address
+ 
+ ## Let's makje the local directory to be available for remote hosts:
+ ```
+ sudo exportfs -rav
+ ```
+ #### The output should look like this 
+ #### exporting *:/srv/nfs/kubedata
+ ## To have more details ,you can run 
+ ```
+ sudo exportfs -v
+ ```
+ ## To mount the NFS server to the remote hosts do ,
+ ```
+sudo mount -t nfs nfs_ip:/srv/nfs/kubedata /mnt
+```
+```
+sudo mount -t nfs nfs_ip:nfs_path host_client_path
+```
+# If you want to unmount it do:
+```
+sudo umount host_client_path
+```
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
