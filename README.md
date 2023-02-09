@@ -32,3 +32,7 @@ sudo showmount -e localhost
 This should display the shared directory /nfs-share.
 
 
+
+links:
+https://www.exxactcorp.com/blog/Troubleshooting/deploying-dynamic-nfs-provisioning-in-kubernetes
+
