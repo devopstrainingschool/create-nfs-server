@@ -86,10 +86,11 @@ spec:
       mountPath: <Mount point inside the pod>
  ```
  
- ## These are othermethodsof insataaling it to pods
+ ## These are other methodsof insataaling it to pods
  https://itnext.io/kubernetes-storage-part-1-nfs-complete-tutorial-75e6ac2a1f77
  
-
+## adding privisoner k8s
+https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
 ## Install on the client
 https://www.microhost.com/docs/tutorial/how-to-setup-nfs-server/
 
