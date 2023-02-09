@@ -31,7 +31,8 @@ Copy code
 sudo showmount -e localhost
 This should display the shared directory /nfs-share.
 
-
+## Install on the client
+https://www.microhost.com/docs/tutorial/how-to-setup-nfs-server/
 
 links:
 https://www.exxactcorp.com/blog/Troubleshooting/deploying-dynamic-nfs-provisioning-in-kubernetes
