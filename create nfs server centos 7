@@ -1,1 +1,25 @@
 
+# CREATE CENTOS 7 NFS SERVER
+
+## Installing the NFS server
+```
+sudo yum install -y nfs-utils
+```
+### Enable the server & start the server
+```
+sudo systemctl enable nfs-server
+```
+```
+sudo systemctl start nfs-server
+```
+### Check the server status 
+### create  directory if the pvc for k8s may be create  or create any other directory
+```
+ sudo mkdir /srv/nfs/kubedata -p
+```
+ ### change the directory owner to 
+```
+ sudo chown nfsnobody: /srv/nfs/kubedata/
+```
+ ## 
+ 
