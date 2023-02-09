@@ -95,6 +95,8 @@ spec:
  https://itnext.io/kubernetes-storage-part-1-nfs-complete-tutorial-75e6ac2a1f77
  
 ## adding privisoner k8s
+##Use the first link:
+https://itnext.io/kubernetes-storage-part-1-nfs-complete-tutorial-75e6ac2a1f77
 https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
 ## Install on the client
 https://www.microhost.com/docs/tutorial/how-to-setup-nfs-server/
