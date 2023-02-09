@@ -13,6 +13,9 @@ sudo systemctl enable nfs-server
 sudo systemctl start nfs-server
 ```
 ### Check the server status 
+```
+sudo systemctl status nfs-server
+```
 ### create  directory if the pvc for k8s may be create  or create any other directory
 ```
  sudo mkdir /srv/nfs/kubedata -p
