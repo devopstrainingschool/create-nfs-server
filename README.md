@@ -59,11 +59,14 @@ sudo umount host_client_path
  # To add the NSF to kubernetes pods
  ## 1- Configuration to add worker nodes to /etc/exports
  ### examples 
+ ```
  /mnt/nfs_share  worker_node_01_ip_addr(rw,sync,no_subtree_check)
 /mnt/nfs_share  worker_node_02_ip_addr(rw,sync,no_subtree_check)
 /mnt/nfs_share  worker_node_03_ip_addr(rw,sync,no_subtree_check)
+```
  ## 2- Mount using this example
- apiVersion: v1
+ ```
+apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
@@ -81,13 +84,10 @@ spec:
     volumeMounts:
     - name: nfs-vol
       mountPath: <Mount point inside the pod>
- 
+ ```
  
  ## These are othermethodsof insataaling it to pods
  https://itnext.io/kubernetes-storage-part-1-nfs-complete-tutorial-75e6ac2a1f77
- 
- 
- 
  
 
 ## Install on the client
